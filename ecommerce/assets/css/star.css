@@ -1,0 +1,33 @@
+input.star{
+    border: 0; width:1px; 
+    height:1px;
+     overflow:hidden; 
+    position:absolute!important; 
+    clip:rect(px1 px1 px1 px1); 
+    clip:rect(px1, px1, px1, px1);
+    opacity:0;
+}
+
+label.star{
+    position: relative; float:left; color:#d6eed6;  
+}
+label:before{
+margin:5px; 
+content:'\f005';
+font-family: FontAwesome;
+display: inline-block;
+font-size: 1.1em;
+color:rgb(187, 202, 187);
+-webkit-user-select: none;
+-moz-user-select: none;
+user-select: none;
+}
+input:checked ~ label:before{
+  color: #07ff1c;
+}
+label:hover ~ label:before{
+  color: #a4ff70;
+}
+label:hover:before{
+  color: #4dff07;
+}
